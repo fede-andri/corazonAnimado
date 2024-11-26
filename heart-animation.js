@@ -1,27 +1,3 @@
-// Lista de mensajes personalizados
-const messages = [
-  "SHAMIRA NAHIARA LOPEZ ❤",
-  "TE AMO 💖",
-  "PUEDO SER TU NOVIO? 💖"
-];
-
-let currentMessageIndex = 0;
-
-// Función para cambiar mensajes
-function updateMessage() {
-  const messageContainer = document.getElementById("messages");
-  if (messageContainer) {
-    messageContainer.textContent = messages[currentMessageIndex];
-    currentMessageIndex = (currentMessageIndex + 1) % messages.length; // Alternar entre los mensajes
-  }
-}
-
-// Cambia el mensaje cada 5 segundos
-setInterval(updateMessage, 9000);
-
-// Inicializa el primer mensaje
-updateMessage();
-
 // Inicializa la animación del corazón
 let init = function () {
   let loaded = false;
@@ -144,7 +120,7 @@ let init = function () {
   loop();
 };
 
-// Carga la animación y los mensajes
+// Carga la animación del corazón
 let s = document.readyState;
 if (s === "complete" || s === "loaded" || s === "interactive") {
   init();
